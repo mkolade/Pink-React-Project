@@ -1,0 +1,34 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "Why do we use it?/nIt is a long established fact that a reader will be distracted Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil harum quasi quibusdam fugit saepe optio quisquam minus blanditiis ducimus? Illum ut optio cumque! Voluptas tempore alias itaque incidunt consectetur fugiat atque tempora rerum tenetur consequatur magni voluptatem voluptatibus, odit dolorum ex distinctio velit ratione ipsum voluptatum provident. Ratione commodi odit nihil repellat cum. Assumenda non perspiciatis hic repudiandae ut laboriosam odio amet eum vitae nulla distinctio accusamus beatae nisi ducimus facere, ad necessitatibus in ipsum quaerat magnam tempore! Quibusdam, reiciendis porro dolorum repellat quidem, eveniet ipsa dolor nostrum perspiciatis pariatur ab officiis, voluptatem id sit? Dolor est dolores, quae, necessitatibus itaque sapiente impedit, explicabo voluptates totam in ipsam accusamus harum aperiam molestiae nostrum perferendis eos quasi veniam suscipit cum! Odio quo quos perferendis cupiditate placeat recusandae, laudantium pariatur, accusantium possimus illo accusamus doloribus optio voluptatibus corporis. Necessitatibus nam facilis provident id quo sunt sed illum, aut nisi, totam inventore dicta reiciendis facere eligendi ipsam eos. Non aliquam assumenda saepe porro voluptas quasi laborum asperiores esse? Totam, aliquam officia. Expedita est deserunt temporibus repellat dolor mollitia placeat perferendis, quisquam minima porro, voluptatem facere blanditiis quasi facilis molestiae voluptatibus vero, fugit dolores autem illum. Mollitia sapiente nihil odit vitae ipsum temporibus quia!",
+      "author": "Mario",
+      "id": 1
+    },
+    {
+      "title": "Opening Party!",
+      "body": "Why do we use it?/nIt is a long established fact that a reader will be distracted Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil harum quasi quibusdam fugit saepe optio quisquam minus blanditiis ducimus? Illum ut optio cumque! Voluptas tempore alias itaque incidunt consectetur fugiat atque tempora rerum tenetur consequatur magni voluptatem voluptatibus, odit dolorum ex distinctio velit ratione ipsum voluptatum provident. Ratione commodi odit nihil repellat cum. Assumenda non perspiciatis hic repudiandae ut laboriosam odio amet eum vitae nulla distinctio accusamus beatae nisi ducimus facere, ad necessitatibus in ipsum quaerat magnam tempore! Quibusdam, reiciendis porro dolorum repellat quidem, eveniet ipsa dolor nostrum perspiciatis pariatur ab officiis, voluptatem id sit? Dolor est dolores, quae, necessitatibus itaque sapiente impedit, explicabo voluptates totam in ipsam accusamus harum aperiam molestiae nostrum perferendis eos quasi veniam suscipit cum! Odio quo quos perferendis cupiditate placeat recusandae, laudantium pariatur, accusantium possimus illo accusamus doloribus optio voluptatibus corporis. Necessitatibus nam facilis provident id quo sunt sed illum, aut nisi, totam inventore dicta reiciendis facere eligendi ipsam eos. Non aliquam assumenda saepe porro voluptas quasi laborum asperiores esse? Totam, aliquam officia. Expedita est deserunt temporibus repellat dolor mollitia placeat perferendis, quisquam minima porro, voluptatem facere blanditiis quasi facilis molestiae voluptatibus vero, fugit dolores autem illum. Mollitia sapiente nihil odit vitae ipsum temporibus quia!",
+      "author": "Yoshi",
+      "id": 2
+    },
+    {
+      "title": "Hello Ninjas",
+      "body": "hbdfiovjd.jhvjndfjvndjhvnc,mjbvnkdfmvbdfvfvudflvdfv",
+      "author": "mario",
+      "id": 3
+    },
+    {
+      "title": "Happy birthday",
+      "body": "Mfs",
+      "author": "yoshi",
+      "id": 5
+    },
+    {
+      "title": "Hello",
+      "body": "Hi",
+      "author": "mario",
+      "id": 6
+    }
+  ]
+}
