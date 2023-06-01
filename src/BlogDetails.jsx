@@ -1,17 +1,16 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import useFetch from './useFetch';
-import { getDatabase, ref, remove } from "firebase/database";
+import {ref, remove } from "firebase/database";
+import { database } from "../firebase"; // Import the 'database' object from your 'firebase.js' file
 
 const BlogDetails = () => {
     const {id} = useParams();
     const { data: blog, isPending, error } = useFetch(`blogs/${id}`);
   const navigate = useNavigate();
 
-    const handleDelete = () => {
-    const db = getDatabase();
-    const blogsRef = ref(db, 'blogs');
-    const blogRef = ref(blogsRef, id);
+  const handleDelete = () => {
+    const blogRef = ref(database, `blogs/${id}`);
 
     remove(blogRef)
     .then(() => {
@@ -21,7 +20,7 @@ const BlogDetails = () => {
     .catch((err) => {
       console.error('Error deleting blog:', err);
     });
-    }
+  }
   return (
     <div className='blog-details'>
       {isPending && <div>Loading...</div>}
