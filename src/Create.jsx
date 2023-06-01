@@ -1,30 +1,48 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getDatabase, ref, push, set } from "firebase/database";
 
 const Create = () => {
   const [title,setTitle] = useState('');
   const [body,setBody] = useState('');
   const [author,setAuthor] = useState('mario');
-  const [isPending,setisPending] = useState(false);
+  const [isPending,setIsPending] = useState(false);
   const navigate = useNavigate()
 
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    
-    setisPending(true);
-    const newBlog = {title,body,author};
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    fetch('http://localhost:8000/blogs/',{
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(newBlog)
-    }).then(() => {
-      console.log('New blog Added')
-      setisPending(false);
-      /* navigate(-1)  OR*/
-      navigate('/')
+    setIsPending(true);
+    const newBlog = {
+      title,
+      body,
+      author
+    };
+
+    const db = getDatabase();
+    const blogsRef = ref(db, 'blogs');
+    const newBlogRef = push(blogsRef);
+
+    
+    const newBlogKey = newBlogRef.key; // to Get the unique key
+    const newBlogWithKey = {
+      ...newBlog,
+      id: newBlogKey // Add the key to the new blog object
+    };
+  
+
+    set(newBlogRef, newBlogWithKey)
+    .then(() => {
+      console.log('New blog added');
+      setIsPending(false);
+      navigate('/');
     })
-  }
+    .catch((err) => {
+      console.error(err);
+      setIsPending(false);
+    });
+  };
+
 
   return (
     <div className='create'>
