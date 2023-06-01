@@ -12,6 +12,9 @@ const Home = () => {
       {blogs && (
         <BlogList blogs={Object.values(blogs)} title="All Blogs" />
       )}
+      { !isPending && !blogs &&(
+        <h2 style={{color:'red'}}>No blogs to show</h2>
+      )}
     </div>
   );
 };
